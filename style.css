@@ -1,0 +1,106 @@
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  list-style: none;
+}
+body {
+  background: url("../img/fond.jpg") center/cover;
+  min-height: 200vh;
+  text-align: center;
+  color: white;
+  overflow-x: hidden; /* pour cacher le scroll de x */
+}
+.wallpaper {
+  height: 50px;
+  width: 50px;
+  margin: 15px;
+  position: absolute;
+  top: 30vh;
+  left: 2vh;
+}
+#menu {
+  color: #1967cd;
+  box-shadow: 0 0 20px 3px;
+  position: absolute;
+  border-radius: 10px;
+  cursor: pointer;
+}
+#menu:hover {
+  color: #54158b;
+  box-shadow: 0 0 11px 8px;
+  height: 55px;
+  width: 55px;
+  position: absolute;
+  border-radius: 10px;
+}
+.box {
+  border: 6px solid white;
+  transition: 0.25 ease;
+  background: #000000a1;
+  padding: 10px;
+  /* margin: 100px 400px 100px 400px; */
+}
+#btn-1,
+#btn-2 {
+  background: rgb(103, 94, 94);
+  color: rgb(43, 122, 226);
+  height: 30px;
+  font-size: 15px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 5px 1px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.25s;
+}
+#btn-1:hover,
+#btn-2:hover {
+  background: rgb(16, 8, 8);
+  color: rgb(132, 32, 189);
+  height: 40px;
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  box-shadow: 0 0 12px 6px;
+  border-radius: 10px;
+}
+p {
+  visibility: hidden; /* faire disparaitre p */
+  width: 240px;
+  margin: 10px auto 0;
+  opacity: 0;
+  transition: 0.9s;
+  transform: translateX(-200px);
+}
+.question-clicked {
+  background: rgba(46, 68, 141, 0.445);
+  border: 6px solid rgba(154, 26, 168, 0.706);
+  border-radius: 20px;
+}
+.show-response {
+  visibility: visible;
+  opacity: 1; /*effet dopaciter transition quand la rep saffiche*/
+  transform: translateX(0px); /*effet daffichage qui vien den bas vers le haut*/
+}
+.mousemove {
+  height: 50px;
+  width: 50px;
+  border: 2px solid rgb(109, 17, 92);
+  position: absolute;
+  transform: translate(-50%, -50%); /*centrer correctement*/
+  border-radius: 100px;
+  z-index: -1; /*pour mettre en arriere de tous comme un calque*/
+}
+nav {
+  background: rgba(89, 31, 89, 0.561);
+  position: fixed; /*pour quil reste tou le temp en haut*/
+  width: 100%;
+  height: 50px;
+  top: -50px;
+  transition: 0.2;
+}
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; /*mettre de lespace entre*/
+  margin: 10px;
+  padding: 0;
+}
