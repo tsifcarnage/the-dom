@@ -34,10 +34,10 @@ function changeBackground() {
   //qui permet de changer de bck en reclick
   let monCorps = document.querySelector("body");
   if (isOriginalBackground) {
-    monCorps.style.background = "url('../img/fond2.jpg') center / cover ";
+    monCorps.style.background = "url('./img/fond2.jpg') center / cover ";
     monCorps.style.transition = "0.5s";
   } else {
-    monCorps.style.background = "url('../img/fond.jpg') center / cover ";
+    monCorps.style.background = "url('./img/fond.jpg') center / cover ";
     monCorps.style.transition = "0.5s";
   }
   isOriginalBackground = !isOriginalBackground;
@@ -80,7 +80,7 @@ response.addEventListener("mouseout", () => {
 //KEY PRESS event
 const keypressContainer = document.querySelector(".keypress");
 const key = document.getElementById("key");
-const audio = new Audio("../music/dark_december.mp3"); //cree un objet audio
+const audio = new Audio("./music/dark_december.mp3"); //cree un objet audio
 document.addEventListener("keypress", (e) => {
   key.textContent = e.key; //injecter du texte
   if (e.key === "p") {
