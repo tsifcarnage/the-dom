@@ -4,7 +4,7 @@
   list-style: none;
 }
 body {
-  background: url("./img/fond.jpg") center/cover;
+  background: url("/img/fond.jpg") center/cover;
   min-height: 200vh;
   text-align: center;
   color: white;
